@@ -1,5 +1,6 @@
 # GhostCloud (a SoundCloud clone)
 
+[![Stories in Ready](https://badge.waffle.io/mrjaimisra/apicurious_scloud.svg?label=ready&title=Ready)](http://waffle.io/mrjaimisra/apicurious_scloud)
 [![Build Status](https://travis-ci.org/mrjaimisra/apicurious_scloud.svg?branch=setup)](https://travis-ci.org/mrjaimisra/apicurious_scloud)
 
 ## [Jai Misra](https://github.io/mrjaimisra)
