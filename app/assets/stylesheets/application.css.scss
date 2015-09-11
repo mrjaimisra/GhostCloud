@@ -1,0 +1,642 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div {
+  display: block;
+}
+
+/* Body */
+
+body {
+  overflow-y: scroll;
+  background: #f2f2f2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABNgAAABkAQMAAABuPx8iAAAAA1BMV…R4Xu3AMQEAAADCIPunNsYeWAQAAAAAAAAAAAAAAAAAAOA88AABMGQBNwAAAABJRU5ErkJggg==) repeat-y 50% 0;
+  padding-bottom: 75px;
+}
+
+body {
+  font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  color: #333;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  -webkit-transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  background: #333;
+  height: 46px;
+  top: 0;
+  transition: top .2s ease-in-out;
+}
+.fixed {
+  position: fixed;
+}
+.g-z-index-header {
+  z-index: 1000;
+}
+.g-dark {
+  color: #999;
+}
+.sc-selection-disabled {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  outline: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/* left header */
+
+.l-container.l-fullwidth {
+  width: 1240px;
+  padding: 0;
+}
+.header__inner {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+          }
+
+.l-container {
+  padding: 0 30px;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.l-container:before, .l-container:after {
+  content: "";
+  display: table;
+}
+
+/* header logo */
+
+.header__logo {
+  background: #0AAAFF;
+  background: linear-gradient(#0AAAFF, #04477A);
+}
+.left {
+  float: left;
+}
+
+.g-dark a, .g-dark .sc-type-light {
+  color: #ccc;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+
+.header__logoLink {
+            background: url(https://a-v2.sndcdn.com/assets/images/header/cloud-e365a4.png) no-repeat 12px 11px;
+            background-size: 48px 22px;
+            display: block;
+            height: 46px;
+            width: 69px;
+          }
+.sc-ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+.sc-border-box {
+  box-sizing: border-box;
+}
+
+/* left nav */
+
+.show .header__navWrapper, .show .header__search, .show .header__right {
+  display: block;
+  visibility: visible;
+}
+.header__navWrapper, .header__search, .header__right {
+            display: none;
+            visibility: hidden;
+          }
+.left {
+  float: left;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+.left {
+  float: left;
+}
+.sc-list-nostyle {
+  list-style: none;
+  margin: 0;
+}
+ul {
+  list-style: disc;
+}
+ul, ol {
+  padding: 0;
+  margin: 0 0 18px 25px;
+}
+
+/* left nav home link */
+
+.header__navMenu>li>a {
+  display: block;
+  padding: 12px 0;
+  width: 104px;
+  height: 46px;
+  border-right: 1px solid #111;
+  box-sizing: border-box;
+  text-align: center;
+}
+.g-dark a, .g-dark .sc-type-light {
+  color: #ccc;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+
+/* left nav collection link */
+
+.header__navMenu>li {
+  float: left;
+  position: relative;
+}
+
+.header__navMenu>li>a {
+  display: block;
+  padding: 12px 0;
+  width: 104px;
+  height: 46px;
+  border-right: 1px solid #111;
+  box-sizing: border-box;
+  text-align: center;
+}
+.g-dark a, .g-dark .sc-type-light {
+  color: #ccc;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+
+/* Header Middle */
+
+.header__middle {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* header search bar */
+
+.show .header__navWrapper, .show .header__search, .show .header__right {
+  display: block;
+  visibility: visible;
+}
+.header__navWrapper, .header__search, .header__right {
+            display: none;
+            visibility: hidden;
+          }
+
+.headerSearch {
+  padding: 9px 10px 8px;
+  position: relative;
+  appearance: none;
+}
+
+.g-dark textarea, .g-dark select, .g-dark input[type="text"], .g-dark input[type="password"], .g-dark input[type="search"] {
+  color: #666;
+  outline: 0;
+  border: 0;
+  padding: 5px 7px;
+  background: #e5e5e5;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+textarea, select, input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="date"], input[type="password"], input[type="search"] {
+  box-sizing: border-box;
+}
+.headerSearch__input {
+            height: 28px;
+          }
+.headerSearch__input {
+            width: 100%;
+          }
+.g-all-transitions-300 {
+  transition: all 300ms ease-in-out;
+}
+.sc-input {
+  display: inline-block;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color .1s;
+}
+textarea, select, input {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+textarea, select, button, input {
+  font-family: inherit;
+  color: #333;
+}
+button, input {
+  line-height: normal;
+}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+}
+
+/* header search submit button */
+
+.headerSearch__submit {
+  border: 0;
+  padding: 0;
+  background: url(https://a-v2.sndcdn.com/assets/images/header/search-dbfe5c.svg) 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.sc-ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+textarea, select, button, input {
+  font-family: inherit;
+  color: #333;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button, input {
+  line-height: normal;
+}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+}
+
+/* Header right */
+
+.show .header__navWrapper, .show .header__search, .show .header__right {
+  display: block;
+  visibility: visible;
+}
+.header__navWrapper, .header__search, .header__right {
+            display: none;
+            visibility: hidden;
+          }
+
+.sc-clearfix:before, .sc-clearfix:after {
+  content: "";
+  display: table;
+}
+
+.left {
+  float: left;
+}
+
+/* header right upload button */
+
+.g-dark a, .g-dark .sc-type-light {
+  color: #ccc;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+.uploadButton {
+            display: block;
+          }
+.header__link {
+            padding: 12px 24px 12px;
+            float: left;
+          }
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+
+/* header user nav */
+
+.header__userNav {
+  float: left;
+  padding: 0;
+}
+
+.userNav {
+  box-sizing: border-box;
+  height: 46px;
+}
+
+.sc-clearfix:before, .sc-clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* User nav username dropdown */
+
+.g-dark a, .g-dark .sc-type-light {
+  color: #ccc;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+.userNav__usernameButton {
+            float: left;
+            padding: 12px 28px 12px 10px;
+            box-sizing: border-box;
+            position: relative;
+          }
+.userNav__button {
+            height: 46px;
+            box-sizing: border-box;
+          }
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+
+/* user nav avatar button */
+
+.sc-artwork.sc-artwork-placeholder-5 {
+  background-image: linear-gradient(135deg,#70929c,#8e8485);
+}
+
+.sc-artwork-placeholder-5:hover {
+  height: 102%;
+}
+.image__full, .image {
+            text-align: center;
+            position: relative;
+          }
+.userNav__avatar {
+            margin-top: -2px;
+            margin-right: 10px;
+          }
+.userNav__item {
+            float: left;
+          }
+img, svg, .sc-artwork {
+  display: block;
+}
+.sc-artwork {
+  background-size: cover;
+  background-position: 50% 50%;
+  display: inline-block;
+}
+
+.g-opacity-transition {
+  transition: opacity .2s linear;
+}
+
+.userNav__usernameButton:after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  background-image: url(https://a-v2.sndcdn.com/assets/images/header/dropdown-cf3420.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 5px;
+  opacity: .75;
+}
+
+.sc-clearfix:after {
+  clear: both;
+}
+.sc-clearfix:before, .sc-clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* header right more button */
+
+.left {
+  float: left;
+}
+.sc-list-nostyle {
+  list-style: none;
+  margin: 0;
+}
+ul {
+  list-style: disc;
+}
+ul, ol {
+  padding: 0;
+  margin: 0 0 18px 25px;
+}
+
+.sc-clearfix:before, .sc-clearfix:after {
+  content: "";
+  display: table;
+}
+
+.header__navMenu>li {
+  float: left;
+  position: relative;
+}
+
+.header__navMenu>li>a.header__moreButton {
+  width: 46px;
+  height: 46px;
+  background: url(https://a-v2.sndcdn.com/assets/images/header/more-0e9e75.svg) 50% 50% no-repeat;
+  opacity: .75;
+  border: 0;
+}
+.header__navMenu>li>a {
+            display: block;
+            padding: 12px 0;
+            width: 104px;
+            height: 46px;
+            border-right: 1px solid #111;
+            box-sizing: border-box;
+            text-align: center;
+          }
+.g-dark a, .g-dark .sc-type-light {
+  color: #ccc;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+.sc-ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+
+/* main content area */
+
+.l-container.l-content {
+  padding-top: 46px;
+}
+.l-container {
+  padding: 0 30px;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.l-container:before, .l-container:after {
+  content: "";
+  display: table;
+}
+
+.l-fluid-fixed {
+  position: relative;
+}
+
+.l-fluid-fixed .l-main {
+  padding: 30px 30px 0 0;
+  margin: 0 330px 0 0;
+}
+.sc-border-light-right {
+  border-right: 1px solid #f2f2f2;
+}
+
+/* left tabs */
+
+.streamExploreTabs {
+  margin-bottom: 30px;
+}
+
+.g-tabs-large {
+  font-size: 24px;
+  line-height: 1.6;
+}
+.g-tabs {
+  border-bottom: 1px solid #0AAAFF;
+  list-style: none;
+  margin: 0;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
+ul {
+  list-style: disc;
+}
+ul, ol {
+  padding: 0;
+  margin: 0 0 18px 25px;
+}
+
+/* category tabs */
+
+.g-tabs:before, .g-tabs:after {
+  content: "";
+  display: table;
+}
+
+.g-tabs-item:first-child {
+  margin-left: 0;
+}
+.g-tabs-item {
+  float: left;
+  margin: 0 15px -1px;
+}
+
+a.g-tabs-link.active {
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+a, a:visited {
+  color: #38d;
+  text-decoration: none;
+}
+.g-tabs-link, .g-tabs-link:visited {
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+
+.g-tabs-link#stream {
+  border-color: #f50;
+  color: #f50;
+  cursor: default;
+}
+
+.g-tabs:after {
+  clear: both;
+}
+.g-tabs:before, .g-tabs:after {
+  content: "";
+  display: table;
+}
+
+.right {
+  float: right
+}
+
+/* Stream */
+
+.trax {
+  margin-bottom: 24px
+}
+
+a { color:#ccc; text-decoration: none; }
+a:visited { color:#ccc; }
+a:hover { color:#0AAAFF; text-decoration: none; }
+a:active { color:white; }

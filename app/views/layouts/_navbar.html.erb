@@ -1,0 +1,47 @@
+<header class="header sc-selection-disabled fixed g-dark g-z-index-header show">
+  <div class="header__inner l-container l-fullwidth">
+    <div class="header__left">
+      <div class="header__logo left">
+        <%= link_to "Soundcloud", root_url, class: "header__logoLink sc-border-box sc-ir" %>
+      </div>
+      <nav class="left header__navWrapper">
+        <ul class="header__navMenu header__mainMenu left sc-list-nostyle">
+          <li>
+            <%= link_to "Home", "/", class: "header__mainMenu-loggedInHome header__mainMenu-stream" %>
+          </li>
+          <li class="header__collection-wrapper">
+            <%= link_to "Collection", "/", class: "header__mainMenu-collection" %>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__middle">
+      <div class="header__search">
+        <form class="headerSearch">
+          <input class="headerSearch__input sc-input g-all-transitions-300"
+                 type="search"
+                 placeholder="Search"
+                 autocomplete="off"
+                 aria-label="Search"/>
+          <%= button_to "Search", "/", method: :post, class: "headerSearch__submit submit sc-ir" %>
+        </form>
+      </div>
+    </div>
+    <div class="header__right sc-clearfix">
+      <div class="header__soundInput left">
+        <%= link_to "Upload", "/", class: "uploadButton header__link" %>
+      </div>
+      <div class="header__userNav">
+        <div class="userNav sc-clearfix">
+          <%= image_tag current_user.soundcloud_client.get("/me")[:avatar_url], class: "image userNav__item userNav__avatar readOnly customImage sc-artwork sc-artwork-placeholder-5", height: "44px", width: "44px" %>
+          <%= link_to current_user.soundcloud_client.get("/me")[:username], "/", class: "userNav__button userNav__usernameButton" %>
+        </div>
+      </div>
+      <ul class="header__navMenu sc-clearfix sc-list-nostyle left">
+        <li>
+          <%= link_to "Settings and more", "/", class: "header__moreButton sc-ir" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

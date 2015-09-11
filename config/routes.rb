@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'soundcloud/connect',   to: "soundcloud#connect",    as: :soundcloud_connect
+  get 'soundcloud/connected', to: "soundcloud#connected",  as: :soundcloud_connected
+  get 'soundcloud/destroy',   to: "soundcloud#disconnect", as: :soundcloud_disconnect
+
+  root "home#show"
+  get  "/auth/soundcloud/callback", to: 'sessions#create'
+  get "/dashboard", to: 'dashboard#show'
+  get "/logout", to: 'sessions#destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
