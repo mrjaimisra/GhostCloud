@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'webmock'
 
 RSpec.feature "User can sign in with OAuth", type: :feature do
   xscenario "successfully" do

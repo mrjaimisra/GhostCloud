@@ -1,0 +1,22 @@
+<div class="l-sidebar-right">
+  <div class="streamSidebar sc-clearfix sc-browsers-enable-gpu">
+    <article class="sidebarModule g-all-transitions-200-linear statsModule">
+      <h3 class="sidebarHeader sc-clearfix sc-link-light outgoing-stats-module sc-border-light-bottom">
+        Statistics:
+        <br>
+        <div class="sidebarContent">
+          <div class="">
+            <% me = current_user.soundcloud_client.get("/me") %>
+            <%= image_tag me[:avatar_url] %>
+            <span class="stats">Username:</span> <%= me[:username] %> <br/>
+            <span class="stats">City:</span> <%= me[:city] %> <br/>
+            <span class="stats">Country:</span> <%= me[:country] %> <br/>
+            <span class="stats">Tracks:</span> <%= me[:track_count] %> <br/>
+            <span class="stats">Following:</span> <%= me[:followings_count] %> <br/>
+            <span class="stats">Followers:</span> <%= me[:followers_count] %>
+          </div>
+        </div>
+      </h3>
+    </article>
+  </div>
+</div>
