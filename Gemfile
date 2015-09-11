@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'soundcloud'
+  gem 'soundcloud'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -48,6 +48,11 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'pry-rails'
+  gem 'bootstrap-sass'
+  gem 'omniauth-soundcloud', '~> 1.0.0'
+  gem 'figaro'
+  gem 'certified'
+  gem 'hurley'
 end
 
 group :production do
