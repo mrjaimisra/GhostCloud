@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/likes", to: "likes#index"
   get "/explore", to: "explore#index"
   get "/following", to: "followings#index"
+  post "/following", to: "followings#unfollow"
   get "/stream", to: "stream#index"
   get "/search", to: "stream#search"
 
