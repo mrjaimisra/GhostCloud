@@ -1,6 +1,6 @@
 class SoundcloudController < ApplicationController
   def connect
-    redirect_to soundcloud_client.authorize_url(:display => "popup")
+    redirect_to soundcloud_client.authorize_url
   end
 
   def connected
@@ -11,6 +11,7 @@ class SoundcloudController < ApplicationController
                                                            :soundcloud_user_id  => me.id,
                                                            :soundcloud_username => me.username
                                                        })
+    session[:user_id] = User.last.id
 
     current_user.update_attributes!({
                                         :soundcloud_access_token  => soundcloud_client.access_token,

@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   def self.find_or_create_by_soundcloud_user_id(data)
-    user = User.find_or_create_by(soundcloud_user_id: data[:soundcloud_user_id], soundcloud_username: data[:soundcloud_username])
+    user = User.find_or_create_by(soundcloud_user_id: data[:soundcloud_user_id],
+                                  soundcloud_username: data[:soundcloud_username])
 
     user.soundcloud_user_id  = data[:soundcloud_user_id]
     user.soundcloud_username = data[:soundcloud_username]
