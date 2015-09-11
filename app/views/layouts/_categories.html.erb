@@ -1,17 +1,37 @@
 <ul class="g-tabs g-tabs-large streamExploreTabs__streamTab">
   <li class="g-tabs-item">
-    <h3><%= link_to "Stream", "/", class: "g-tabs-link", id: "stream" %></h3>
+    <% if params[:controller] == "stream" %>
+      <h3><%= link_to "Stream", stream_path, class: "g-tabs-link", id: "selected" %></h3>
+    <% else %>
+      <h3><%= link_to "Stream", stream_path, class: "g-tabs-link" %></h3>
+    <% end %>
   </li>
   <li class="g-tabs-item">
-    <h3><%= link_to "Likes", "/", class: "g-tabs-link" %></h3>
+    <% if params[:controller] == "likes" %>
+      <h3><%= link_to "Likes", likes_path, class: "g-tabs-link", id: "selected" %> </h3>
+    <% else %>
+      <h3><%= link_to "Likes", likes_path, class: "g-tabs-link" %> </h3>
+    <% end %>
   </li>
   <li class="g-tabs-item">
-    <h3><%= link_to "Following", "/", class: "g-tabs-link" %></h3>
+    <% if params[:controller] == "followings" %>
+      <h3><%= link_to "Following", following_path, class: "g-tabs-link", id: "selected" %></h3>
+    <% else %>
+      <h3><%= link_to "Following", following_path, class: "g-tabs-link" %></h3>
+    <% end %>
   </li>
   <li class="g-tabs-item">
-    <h3><%= link_to "Explore", "/", class: "g-tabs-link" %></h3>
+    <% if params[:controller] == "explore" %>
+      <h3><%= link_to "Explore", explore_path, class: "g-tabs-link", id: "selected" %></h3>
+    <% else %>
+      <h3><%= link_to "Explore", explore_path, class: "g-tabs-link" %></h3>
+    <% end %>
   </li>
   <li class="g-tabs-item right">
-    <h3><%= link_to "Uploads", uploads_path, class: "g-tabs-link" %></h3>
+    <% if params[:controller] == "uploads" %>
+      <h3><%= link_to "Uploads", explore_path, class: "g-tabs-link", id: "selected" %></h3>
+    <% else %>
+      <h3><%= link_to "Uploads", uploads_path, class: "g-tabs-link" %></h3>
+    <% end %>
   </li>
 </ul>

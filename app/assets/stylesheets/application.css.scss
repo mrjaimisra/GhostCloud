@@ -240,7 +240,7 @@ a, a:visited {
           }
 
 .headerSearch {
-  padding: 9px 10px 8px;
+  //padding: 9px 10px 8px;
   position: relative;
   appearance: none;
 }
@@ -303,8 +303,8 @@ button, input, select, textarea {
   width: 15px;
   height: 15px;
   position: absolute;
-  right: 20px;
-  top: 15px;
+  right: 14px;
+  top: 7px;
 }
 .sc-ir {
   border: 0;
@@ -418,8 +418,9 @@ a, a:visited {
 }
 
 .sc-artwork-placeholder-5:hover {
-  height: 102%;
+  transform: rotateY(180deg)
 }
+
 .image__full, .image {
             text-align: center;
             position: relative;
@@ -498,6 +499,7 @@ ul, ol {
   opacity: .75;
   border: 0;
 }
+
 .header__navMenu>li>a {
             display: block;
             padding: 12px 0;
@@ -612,7 +614,7 @@ a, a:visited {
   display: block;
 }
 
-.g-tabs-link#stream {
+.g-tabs-link#selected {
   border-color: #f50;
   color: #f50;
   cursor: default;
@@ -640,3 +642,5 @@ a { color:#ccc; text-decoration: none; }
 a:visited { color:#ccc; }
 a:hover { color:#0AAAFF; text-decoration: none; }
 a:active { color:white; }
+
+/* Following */

@@ -7,39 +7,37 @@
       <nav class="left header__navWrapper">
         <ul class="header__navMenu header__mainMenu left sc-list-nostyle">
           <li>
-            <%= link_to "Home", "/", class: "header__mainMenu-loggedInHome header__mainMenu-stream" %>
+            <%= link_to "Home", dashboard_path, class: "header__mainMenu-loggedInHome header__mainMenu-stream" %>
           </li>
           <li class="header__collection-wrapper">
-            <%= link_to "Collection", "/", class: "header__mainMenu-collection" %>
+            <%= link_to "Collection", "http://soundcloud.com/you/collection", class: "header__mainMenu-collection", target: "_blank" %>
           </li>
         </ul>
       </nav>
     </div>
     <div class="header__middle">
-      <div class="header__search">
-        <form class="headerSearch">
-          <input class="headerSearch__input sc-input g-all-transitions-300"
-                 type="search"
-                 placeholder="Search"
-                 autocomplete="off"
-                 aria-label="Search"/>
-          <%= button_to "Search", "/", method: :post, class: "headerSearch__submit submit sc-ir" %>
-        </form>
+      <div class="header__search navbar-form">
+        <div class="headerSearch">
+          <%= form_tag("/search", method: "get") do %>
+          <%= text_field_tag :q, nil, class: "headerSearch__input sc-input g-all-transitions-300", placeholder: "Search", autocomplete: "off" %>
+          <%= submit_tag "Search", method: "get", class: "headerSearch__submit submit sc-ir" %>
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="header__right sc-clearfix">
       <div class="header__soundInput left">
-        <%= link_to "Upload", "/", class: "uploadButton header__link" %>
+        <%= link_to "Upload", "https://soundcloud.com/upload", target: "_blank", class: "uploadButton header__link" %>
       </div>
       <div class="header__userNav">
         <div class="userNav sc-clearfix">
           <%= image_tag current_user.soundcloud_client.get("/me")[:avatar_url], class: "image userNav__item userNav__avatar readOnly customImage sc-artwork sc-artwork-placeholder-5", height: "44px", width: "44px" %>
-          <%= link_to current_user.soundcloud_client.get("/me")[:username], "/", class: "userNav__button userNav__usernameButton" %>
+          <%= link_to current_user.soundcloud_client.get("/me")[:username], current_user.soundcloud_client.get("/me")[:permalink_url], target: "_blank", class: "userNav__button userNav__usernameButton" %>
         </div>
       </div>
       <ul class="header__navMenu sc-clearfix sc-list-nostyle left">
         <li>
-          <%= link_to "Settings and more", "/", class: "header__moreButton sc-ir" %>
+          <%= link_to "Logout", logout_path, class: "" %>
         </li>
       </ul>
     </div>

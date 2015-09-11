@@ -10,12 +10,9 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
-  # def current_client
-  #   @current_client ||= Soundcloud.new(:client_id => ENV["soundcloud_id"],
-  #                                   :client_secret => ENV["soundcloud_secret"],
-  #                                   :redirect_uri => ENV["redirect_uri"],
-  #                                   :response_type => 'code')
-  # end
+  def me
+    current_user.soundcloud_client.get("/me")
+  end
 
   def authorize!
     redirect_to root_path unless current_user

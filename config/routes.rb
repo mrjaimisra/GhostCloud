@@ -7,6 +7,11 @@ Rails.application.routes.draw do
   get "/dashboard", to: 'dashboard#show'
 
   get "/uploads", to: "uploads#index"
+  get "/likes", to: "likes#index"
+  get "/explore", to: "explore#index"
+  get "/following", to: "followings#index"
+  get "/stream", to: "stream#index"
+  get "/search", to: "stream#search"
 
   get  "/auth/soundcloud/callback", to: 'sessions#create'
   get "/logout", to: 'sessions#destroy'
