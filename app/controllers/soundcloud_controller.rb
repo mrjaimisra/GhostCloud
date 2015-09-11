@@ -21,7 +21,9 @@ class SoundcloudController < ApplicationController
   redirect_to dashboard_path
   end
 
-  def destroy
+  def disconnect
+    login_as nil
+    redirect_to root_path
   end
 
   private
