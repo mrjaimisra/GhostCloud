@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root "home#show"
   get "/dashboard", to: 'dashboard#show'
 
-  get "/tracks", to: "uploads#index"
+  get "/uploads", to: "uploads#index"
 
   get  "/auth/soundcloud/callback", to: 'sessions#create'
   get "/logout", to: 'sessions#destroy'
