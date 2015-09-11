@@ -1,18 +1,17 @@
-<div class="l-container l-content">
-  <div class="l-fluid-fixed">
-    <div class="sc-border-light-right l-main">
-      <div class="l-tabs">
-        <div class="streamExploreTabs">
-          <ul class="g-tabs g-tabs-large streamExploreTabs__streamTab">
-            <li class="g-tabs-item">
-              <h3><%= link_to "Stream", "/", class: "g-tabs-link", id: "stream" %></h3>
-            </li>
-            <li class="g-tabs-item">
-              <h3><%= link_to "Explore", "/", class: "g-tabs-link" %></h3>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<ul class="g-tabs g-tabs-large streamExploreTabs__streamTab">
+  <li class="g-tabs-item">
+    <h3><%= link_to "Stream", "/", class: "g-tabs-link", id: "stream" %></h3>
+  </li>
+  <li class="g-tabs-item">
+    <h3><%= link_to "Likes", "/", class: "g-tabs-link" %></h3>
+  </li>
+  <li class="g-tabs-item">
+    <h3><%= link_to "Following", "/", class: "g-tabs-link" %></h3>
+  </li>
+  <li class="g-tabs-item">
+    <h3><%= link_to "Explore", "/", class: "g-tabs-link" %></h3>
+  </li>
+  <li class="g-tabs-item right">
+    <h3><%= link_to "Uploads", tracks_path, class: "g-tabs-link" %></h3>
+  </li>
+</ul>

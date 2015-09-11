@@ -23,7 +23,8 @@ class SessionsController < ApplicationController
 #
 #   private
 #
-#     def data
-#       request.env['omniauth.auth']
-#     end
+    def data
+      binding.pry
+      request.env['omniauth.auth']
+    end
 end

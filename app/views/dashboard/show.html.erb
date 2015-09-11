@@ -18,11 +18,11 @@
               <h3><%= link_to "Explore", "/", class: "g-tabs-link" %></h3>
             </li>
             <li class="g-tabs-item right">
-              <h3><%= link_to "Uploads", "/", class: "g-tabs-link" %></h3>
+              <h3><%= link_to "Uploads", tracks_path, class: "g-tabs-link" %></h3>
             </li>
           </ul>
           <div>
-            <% current_user.soundcloud_client.get("/me/tracks", limit: 10).each do |track| %>
+            <% @tracks.each do |track| %>
               <iframe width="100%"
                       height="124"
                       scrolling="no"
