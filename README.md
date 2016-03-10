@@ -7,7 +7,7 @@
 
 The Apicurious individual mini-project at the Turing School teaches students how to consume APIs
 by exposing them to a popular web application's API and asking them to replicate the application using its own API.
-As part of the project, students must implement OAuth in their applications along with several other features depending on the original application's functionality. 
+As part of the project, students must implement OAuth in their applications along with several other features depending on the original application's functionality.
 
 ### Instructions
 
@@ -15,7 +15,9 @@ As part of the project, students must implement OAuth in their applications alon
 - run `rails s`, access `http://localhost:3000` in your browser
 - to run the tests, run `bundle exec rspec`
 
-[Project Outline](https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/apicurious.md#technical-expectations) | [Heroku](https://ghostcloud.herokuapp.com/)
+[Project Outline](https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/apicurious.md#technical-expectations)
+
+[Heroku](https://ghostcloud.herokuapp.com/)
 
 ### Learning Goals
 
